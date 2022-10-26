@@ -21,6 +21,8 @@ Behavior on the **main** branch:
 
 Status and Navigation bar color are **red** (`ef4444`).
 
+![Status and Navigation bar color](main.png)
+
 Behavior on the **[splash-screen-plugin](https://github.com/marcjulian/ng-cap-status-bar/tree/splash-screen-plugin)** branch:
 
 Status and Navigation bar color are black. Styles from Status and Navigation bar are not applied.
