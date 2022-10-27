@@ -17,6 +17,7 @@ import { NavigationBar } from "@hugotomazi/capacitor-navigation-bar";
       />
     </div>
     <h2>Here are some links to help you start:</h2>
+    <button (click)="changeNavigationBarColor()">Click me</button>
     <ul>
       <li>
         <h2>
@@ -51,6 +52,13 @@ export class AppComponent implements OnInit {
       StatusBar.setStyle({ style: Style.Dark });
       StatusBar.setBackgroundColor({ color: "#ef4444" });
       NavigationBar.setColor({ color: "#ef4444" });
+    }
+  }
+
+  changeNavigationBarColor() {
+    if (Capacitor.getPlatform() === "android") {
+      StatusBar.setBackgroundColor({ color: "#22c55e" });
+      NavigationBar.setColor({ color: "#22c55e" });
     }
   }
 }
